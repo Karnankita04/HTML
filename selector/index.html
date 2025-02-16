@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Practice</title>
+    <style>
+      p {
+        color: blue;
+      }
+
+      header h1 {
+        background-color: gray;
+      }
+
+      .intro h2 {
+        font-style: italic;
+      }
+
+      .highlight {
+        background-color: yellow;
+      }
+
+      #box {
+        border: 2px solid black;
+      }
+
+      #box > p {
+        font-size: 18px;
+      }
+
+      li:first-child {
+        font-weight: bold;
+      }
+
+      #box > span {
+        color: red;
+      }
+
+      .content > div > p {
+        text-decoration: underline;
+      }
+
+      .highlight {
+        background-color: pink !important;
+      }
+
+      p.highlight {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Main Heading</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2>Introduction</h2>
+        <p class="highlight">This is an introductory paragraph.</p>
+      </section>
+
+      <section class="content">
+        <h2>Content Section</h2>
+        <div id="box">
+          <p>First paragraph inside div.</p>
+          <p class="highlight" style="background-color: brown;">Second paragraph inside div with a class.</p>
+          <span>Inline span inside div.</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Your Name</p>
+    </footer>
+  </body>
+</html>
